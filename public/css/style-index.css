@@ -1,0 +1,116 @@
+@charset "utf-8"
+*{ 
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  width: 960px;
+  background: LIGHTSTEELBLUE;
+  text-align: Center;
+}
+
+h1 {
+  font: bold 2em sans-serif;
+  color: white;
+  text-align: Center;
+}
+h2 {
+  font: bold 1.2em sans-serif;
+  color: white;
+  background: DARKTURQUOISE;
+  text-align: center;
+}
+
+h3 {
+  font: bold 1em sans-serif;
+  color: white;
+  background: DARKTURQUOISE;
+  text-align: Center;
+}
+
+p {
+  font: bold 0.5em sans-serif;
+}
+
+img {
+  display: block;
+  margin-right: 10px;
+}
+
+article {
+  padding: 8px;
+  border-radius: 20px;
+  box-shadow: RGB(150, 150, 150) 5px5px;
+  background: LIGHTCYAN;
+  border: 3px solid #999999;
+}
+
+article footer {
+  color: DARKTURQUOISE;
+  text-align: center;
+  font: bold 2em sans-serif;
+}
+
+article header {
+  background: DARKTURQUOISE;
+  text-align: center;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 0.5fr;
+  text-align: left;
+}
+
+#cuerpo {
+  margin: 5px auto;
+  text-align: left;
+}
+
+#titulo {
+  background: DARKTURQUOISE;
+  border: 3px solid #999999;
+  padding: 10px;
+}
+
+#seccion {
+  width: 660px;
+  float: left;
+  margin: 5px;
+}
+
+#lado {
+  width: 270px;
+  float: right;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#piepagina {
+  clear: both;
+  padding: 5px;
+  background: DARKTURQUOISE;
+  button: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+a:hover {
+  color: maroon;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: red;
+}
+
+a:active {
+  color: green;
+}

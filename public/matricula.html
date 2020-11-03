@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <Title>formulario Matrícula</title>
+  <Link REL="StyleSheet" HREF="./css/style-matricula.css" type="text/css">
+</head>
+
+<body>
+  <Div ID="cuerpo">
+    <!-- Encabezado -->
+    <Header ID="titulo">
+
+      <Img src="img/korpodesco.png" align="left" width="64" height="64">
+      <Img src="img/usuario.png" align="right" width="64" height="64">
+      <H1 size="20">KORPODESCO</H1>
+    </Header>
+
+    <!-- Sección izquierda -->
+    <Section ID="seccion">
+      <H2>-FORMULARIO MATRÍCULA-</H2>
+
+      <Article>
+        <!--formulario-->
+        <Article>
+          <Header>
+            <H3 align="left">-Diligencie el siguiente formulario sin dejar campos vacios-</H3>
+          </Header>
+          <form action="matricula.php" method="get">
+            <p>-Documento:</p>
+            <input type="number" name="doc" maxlength="15" required>
+            <P>
+              C.C :<input TYPE="radio" name="tdoc" value="CC">
+              T.I :<input TYPE="radio" name="tdoc" value="ti">
+              C.E:<input TYPE="radio" name="tdoc" value="ce">
+            </P>
+            <p>-Nombres: </p>
+            <input type="text" name="nomb" maxlength="30" required>
+            <p>-Apellidos: </p>
+            <input type="text" name="ape" maxlength="30" required>
+            <p>-Dirección: </p>
+            <input type="text" name="dir" maxlength="30" required>
+            <p>-Teléfono: </p>
+            <input type="tel" name="tel" maxlength="13" required>
+            <p>-E-mail: </p>
+            <input type="email" name="email" maxlength="30" required>
+            <p>-Programa: </p>
+            <P>
+              <Select name="prog" size="3" required>
+                <Option selected>-Seleccione Programa-
+                </option>
+                <Option value="1">
+                  1341 Auxiliar Administrativo Empresarial
+                </Option>
+                <Option value="2">
+                  2311- SALUD AMBIENTAL Y DEL TRABAJO
+                </Option>
+                <Option value="3">
+                  6341- GUÍA DE VIAJE Y TURISMO
+                </Option>
+                <Option value="4">
+                  6368- INVESTIGACIÓN JUDICIAL Y CRIMINALISTICA
+                </Option>
+                <Option value="5">
+                  6372- ATENCIÓN Y CUIDADO AL INFANTE
+                </Option>
+                <Option value="6">
+                  374- AUXILIAR EN CLÍNICA VETERINARIA
+                </Option>
+                <Option value="7">
+                  8451- OPERADOR DE MAQUINARIA PESADA
+                </Option>
+                <Option value="8">
+                  8473- MECÁNICO DE EQUIPO PESADO
+                </Option>
+                <Option value="9">
+                  8491- OPERADOR PORTUARIO
+                </Option>
+              </Select>
+            </p>
+            <BR>
+            <p>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Borrar">
+            </p>
+          </form>
+          <Footer>
+            .....
+          </Footer>
+        </Article>
+
+    </Section>
+
+    <!-- Sección derecha -->
+    <Aside ID="lado">
+
+      <!--Enlaces-->
+
+      <Article>
+        <Header>
+          <H2> -FORMULARIOS-</H2>
+        </Header>
+        <Ul>
+          <Li> <a href="/"> Inicio </a></li>
+          <Li> <a href="/"> Inscripcion</a></li>
+          <Li> <a href="/materias"> Registro Materias </a></li>
+          <Li> <a href="/"> Horarios </a></li>
+        </Ul>
+      </Article>
+
+    </Aside>
+
+    <!-- Pie de pagina -->
+    <Footer ID="piepagina">
+      <Div>
+        <Img src="img/telefono.png" align="left" width="50" height="50">
+        <H2>-COMUNICATE-</H2>
+      </Div>
+
+      <Div>
+        <Img src="img/correo.png" align="left" width="50" height="50">
+        <H2>-ESCRIBENOS-</H2>
+      </Div>
+
+      <Div>
+        <Img src="img/redes.png" align="left" width="50" height="50">
+        <H2>-VISITANOS-</H2>
+      </Div>
+
+    </Footer>
+  </div>
+</Body>
+
+</Html>

@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <Title>registro materias</title>
+  <Link REL="StyleSheet" HREF="./css/style-materias.css" type="text/css">
+</head>
+
+<body>
+  <Div ID="cuerpo">
+    <!-- Encabezado -->
+    <Header ID="titulo">
+
+      <Img src="img/korpodesco.png" align="left" width="64" height="64">
+      <Img src="img/usuario.png" align="right" width="64" height="64">
+      <H1 size="20">KORPODESCO</H1>
+    </Header>
+
+    <!-- Sección izquierda -->
+    <Section ID="seccion">
+      <H2>-REGISTRO DE MATERIAS-</H2>
+
+      <Article>
+        <!--formulario-->
+        <Article>
+          <Header>
+            <H3 align="left">-Ingrese su documento y, organice su parrilla de materias.-</H3>
+          </Header>
+          <form action="materias.php" method="get">
+            <p>-Documento:</p>
+            <input type="number" name="doc" minlength="10" maxlength="15" required>
+            <P>
+              C.C :<input TYPE="radio" name="tdoc" value="CC">
+              T.I :<input TYPE="radio" name="tdoc" value="ti">
+              C.E:<input TYPE="radio" name="tdoc" value="ce">
+            </P>
+            <Input type="texto" value="Programa al que está inscrito" onlyread>
+            <P>
+              <Select name="mat">
+                <Option selected>-Seleccione Materia:
+                </option>
+                <Option value="1">Materia 1
+                </Option>
+                <Option value="2">Materia 2
+                </Option>
+                <Option value="3">Materia 3
+                </Option>
+                <Option value="4">Materia 4
+                </Option>
+                <Option value="5">Materia 5
+                </Option>
+                <Option value="6">Materia 6
+                </Option>
+                <Option value="7">Materia 7
+                </Option>
+              </Select>
+            </p>
+            <P> -Dia:
+              <Select name="día">
+                <Option selected>-Seleccione Día...
+                </option>
+                <Option value="1">Lunes
+                </Option>
+                <Option value="2">Martes
+                </Option>
+                <Option value="3">Miércoles
+                </Option>
+                <Option value="4">Jueves
+                </Option>
+                <Option value="5">Viernes
+                </Option>
+                <Option value="6">Sábado
+                </Option>
+              </Select>
+            </p>
+
+            <P> -Hora:
+              <Select name="hora">
+                <Option selected>-Seleccione Franja horaria...
+                </option>
+                <Option value="1">07:00-08:00
+                </Option>
+                <Option value="2">08:00-09:00
+                </Option>
+                <Option value="3">09:00-10:00
+                </Option>
+                <Option value="4">10:00-11:00
+                </Option>
+                <Option value="5">11:00-12:00
+                </Option>
+              </Select>
+            </p>
+            <p>
+              <input type="submit" value="Agregar">
+              <input type="reset" value="Borrar">
+            </p>
+            <table>
+
+              <tr>
+                <th>HORARIOS</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sábado</th>
+              </tr>
+              <Colgroup style="background: DARKTURQUOISE;" <tr>
+                <th>07:00-08:00</th>
+                </tr>
+              <tr>
+                <th>08:00-09:00</th>
+              </tr>
+              <tr>
+                <th>09:00-10:00</th>
+              </tr>
+              <tr>
+                <th>10:00-11:00</th>
+              </tr>
+              <tr>
+                <th>11:00-12:00</th>
+              </tr>
+
+            </table>
+          </form>
+          <Footer>
+            .....
+          </Footer>
+        </Article>
+
+    </Section>
+
+    <!-- Sección derecha -->
+    <Aside ID="lado">
+
+      <!--Enlaces-->
+
+      <Article>
+        <Header>
+          <H2> -FORMULARIOS-</H2>
+        </Header>
+        <Ul>
+          <Li> <a href="/"> Inicio </a></li>
+          <Li> <a href="/"> Inscripcion</a></li>
+          <Li> <a href="/matriculas"> Matrículas </a></li>
+          <Li> <a href="/"> Horarios </a></li>
+        </Ul>
+      </Article>
+
+    </Aside>
+
+    <!-- Pie de pagina -->
+    <Footer ID="piepagina">
+      <Div>
+        <Img src="img/telefono.png" align="left" width="50" height="50">
+        <H2>-COMUNICATE-</H2>
+      </Div>
+
+      <Div>
+        <Img src="img/correo.png" align="left" width="50" height="50">
+        <H2>-ESCRIBENOS-</H2>
+      </Div>
+
+      <Div>
+        <Img src="img/redes.png" align="left" width="50" height="50">
+        <H2>-VISITANOS-</H2>
+      </Div>
+
+    </Footer>
+  </div>
+</Body>
+
+</Html>

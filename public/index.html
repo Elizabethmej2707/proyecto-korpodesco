@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <title>Inicio sesion</title>
+      <link rel="styleSheet" href="./css/style-index.css" type="text/css">
+   </head>
+   <body>
+      <div id="cuerpo">
+         <!-- Encabezado -->
+         <header id="titulo">
+            <img src="img/korpodesco.png" align="left" width="64" height="64">
+            <img src="img/usuario.png" align="right" width="64" height="64">
+            <h1 size="20">KORPODESCO</h1>
+         </header>
+         <!-- Sección izquierda -->
+         <section id="seccion">
+            <img src="img/banner.png" width="660"
+               Aling="Center">
+            <h2>-NOVEDADES-</h2>
+            <article id="grid">
+               <div>
+                  <header>
+                     <h3> -Nuevos Programas-</h3>
+                  </header>
+               </div>
+               <div>
+                  <img src="img/academia.png" align="left" width="50" height="50" >
+                  <P> -Descubre nuestra gran variedad de Programas y comienza a forjar tu futuro.-</P>
+               </div>
+               <div>
+                  <footer>
+                     <p>.....</p>
+                  </footer>
+               </div>
+            </article>
+            <article id="grid">
+               <div>
+                  <header>
+                     <H3> -Matriculas-</H3>
+                  </header>
+               </div>
+               <div>
+                  <img src="img/academia.png" align="left" width="50" height="50" >
+                  <P>  -Recuerda revisar tu matricula.- </p>
+               </div>
+               <div>
+                  <footer>
+                     <p>.....</p>
+                  </footer>
+               </div>
+            </article>
+            <article id="grid">
+               <div>
+                  <header>
+                     <H3>  -Inscripcion Materias-</H3>
+                  </header>
+               </div>
+               <div>
+                  <img src="img/academia.png" align="left" width="50" height="50" >
+                  <P>  -Registra tus Materias pronto y aprovecha tu tiempo al máximo.- </P>
+               </div>
+               <div>
+                  <footer>
+                     <p>.....</p>
+                  </footer>
+               </div>
+            </article>
+         </section>
+         <!-- Sección derecha -->
+         <aside id="lado">
+            <!--Enlaces-->
+            <div>
+               <article>
+                  <header>
+                     <h2> -FORMulARIOS-</h2>
+                  </header>
+                  <ul>
+                     <li> <a href="/"> Inscripción </a></li>
+                     <li> <a href="/matriculas"> Matrícula </a></li>
+                     <li> <a href="/materias"> Registro Materias </a></li>
+                     <li> <a href="/"> Horarios </a></li>
+                  </ul>
+               </article>
+            </div>
+            <!--formulario-->
+            <div>
+               <article>
+                  <Header>
+                     <h2>-Inicio de Sesión-</h2>
+                  </Header>
+                  <form action="usuario.php" method="get">
+                     <p>Usuario:</p>
+                     <input type="text" name="Usuario" maxlength="30">
+                     <p>Contraseña: </p>
+                     <input type="password" name="Contraseña" minlength="8" required>
+                     <p>
+                        <input type="submit" value="Enviar">          
+                        <input type="reset" value="Borrar">
+                     </p>
+                  </form>
+               </article>
+            </div>
+         </aside>
+         <!-- Pie de pagina -->
+         <footer id="piepagina">
+            <div>
+               <img src="img/telefono.png" align="left" width="50" height="50" >
+               <h2>-COMUNICATE-</h2>
+            </div>
+            <div>
+               <img src="img/correo.png" align="left" width="50" height="50" >
+               <h2>-ESCRIBENOS-</h2>
+            </div>
+            <div>
+               <img src="img/redes.png" align="left" width="50" height="50" >
+               <h2>-VISITANOS-</h2>
+            </div>
+         </footer>
+      </div>
+   </Body>
+</Html>
